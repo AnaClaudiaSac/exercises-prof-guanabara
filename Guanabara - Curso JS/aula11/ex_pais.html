@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual País você vive?</title>
+<style>
+
+    body {
+        font: 20pt normal  Arial;
+        background: gainsboro;
+        
+    }
+
+    input  {
+        font-size: 80%;
+        
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+   
+</style>
+
+</head>
+
+<body>
+
+    <h1>Nacionalidade</h1>
+    Qual país você vive? <input type="text" name="pais" id="txpais">
+    <input type="button" value="Verificar" onclick="verificar()" />
+
+    
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var txp = window.document.getElementById('txpais')
+            var res = window.document.getElementById('res')
+            // var nac = ('txpais.value')
+            var nac = txp.value
+            if (nac == '')
+                return
+
+            if (nac == 'brasil' || nac == 'Brasil') {
+                res.innerHTML = `<p> Você é <strong>Brasileiro</strong><p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>Estrangeiro</strong>.</p> `
+            }
+
+            // if (nac != 'brasil' && nac != 'Brasil') {
+            //     res.innerHTML = `<p>Você é <strong>Estrangeiro</strong>.</p> `
+            // } else {
+            //     res.innerHTML = `<p> Você é <strong>Brasileiro</strong><p>`
+            // }
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

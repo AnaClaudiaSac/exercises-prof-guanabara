@@ -1,0 +1,51 @@
+# Utilizando Módulos
+
+# Importando módulos // biblíoteca
+
+# Biblioteca tem comidas, bebidas e doces
+
+# EX: um corpo humano precisa de alimentos
+
+# Vamos supor que eu importe algununs alimentos da biblíoteca para eu acrescentar no corpo.
+
+# import bebida == vai vir todas as bebidas que tenho na biblíoteca.
+
+# agora se eu escolher apenas um item 
+
+# Ex: from doce import pudim // vai vir só o pudim da biblíoteca.
+
+# também posso importar 2 itens
+
+# Ex: from doce import pudim, bolo
+
+# o import é no começo 
+
+#import math
+
+# nun = int(input('Digite um número:'))
+# raiz = math.sqrt(nun)
+# print('A raiz de {} é igaul a {}' .format(nun, raiz))
+
+#print('A raiz de {} é igaul a {}' .format(nun, math.ceil(raiz)))
+
+#math.ceil ele arredonda para cima
+#math.floor para baixo.
+
+
+# import emoji
+# print(emoji.emojize('Python is :money_mouth_face:'))
+# print(emoji.emojize('Python is :money-mouth_face:'))
+# print(emoji.emoji_list('Olá Ana,❤ '))
+
+# import emoji
+# print(emoji.emojize('Olá, Mundo! 😎')) 
+
+import emoji
+print(emoji.emojize('Olá, Mundo!🌎 ' , ))#use_alise=True)) 
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+
+    <style>
+        body {
+            background-color: hsl(240, 82%, 58%);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(241, 241, 134);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+        // var n1 = window.prompt('Digite um número: ') //string
+        // var n2 = window.prompt('Digite outro número: ') //string
+        // var s = n1 + n2
+        // window.alert('A soma dos valores é ' + s)
+        //o Valor foi ==64 // Dessa forma ele faz concatenação em vez de somar.
+        //(number + number) para adição
+        //(string + string) para concatenação
+
+        //O prompt retorna o valor como string//
+        // É preciso fazer uma conversão se quiser a soma.
+        // parse==Converter
+        //Converter para Números
+
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+        // Agora a soma ok.
+        //Para números reais 5.5 usar parseFloat.
+
+        // Agora o temos o Number(n) já converte para o tipo definido!
+        // Mas ainda usamos quando for necessário o parseInt, parseFloat.
+
+        // Ex: var n1 = Number(windows.prompt('Digite um um número: '))
+
+
+        //Converter para String
+        //String(n==valor)
+        //n.toString()
+
+        window.alert('A soma dos valores é ' + s.toString()) // String
+
+        window.alert('A soma dos valores é ' + String(s))  // String
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Concatenação
+
+        //(number + number) para adição
+        //(string + string) para concatenação
+
+
+    </script>
+
+</body>
+
+</html>
